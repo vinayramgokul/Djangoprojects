@@ -1,0 +1,50 @@
+
+PS C:\Users\SINDHU PC> cd .\Djangoprojects\
+PS C:\Users\SINDHU PC\Djangoprojects> ls
+
+
+    Directory: C:\Users\SINDHU PC\Djangoprojects
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       11-03-2018     20:15                helloapp
+
+
+PS C:\Users\SINDHU PC\Djangoprojects> cd .\helloapp\
+PS C:\Users\SINDHU PC\Djangoprojects\helloapp> ls
+
+
+    Directory: C:\Users\SINDHU PC\Djangoprojects\helloapp
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       11-03-2018     19:54                helloapp
+d-----       11-03-2018     19:49                howdy
+d-----       13-02-2018     07:01                Include
+d-----       11-03-2018     19:47                Lib
+d-----       11-03-2018     20:17                Scripts
+d-----       11-03-2018     19:47                tcl
+-a----       11-03-2018     19:54              0 db.sqlite3
+-a----       11-03-2018     19:46            555 manage.py
+-a----       11-03-2018     20:15             60 pip-selfcheck.json
+
+
+PS C:\Users\SINDHU PC\Djangoprojects\helloapp> ./Scripts/Activate
+(helloapp) PS C:\Users\SINDHU PC\Djangoprojects\helloapp> python .\manage.py runserver
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 14 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+March 13, 2018 - 22:03:39
+Django version 2.0.3, using settings 'helloapp.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[13/Mar/2018 22:03:49] "GET / HTTP/1.1" 200 909
+Not Found: /favicon.ico
+[13/Mar/2018 22:03:50] "GET /favicon.ico HTTP/1.1" 404 2280
+[13/Mar/2018 22:03:52] "GET /about/ HTTP/1.1" 200 903
+[13/Mar/2018 22:03:53] "GET / HTTP/1.1" 200 909
